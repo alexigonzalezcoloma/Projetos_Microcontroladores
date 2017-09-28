@@ -30,6 +30,11 @@ def Robot(x,y,z):
     Sensor = cylinder(frame=MyRobot,radius=15,length=10,axis=(0,1,0),color=color.red)
     return MyRobot
 
+def mover_treal(robot):
+ 
+    print robot.pos()
+    
+
 def Mover_Robot_z(robot,xi,yi,zi):
     while(1):
         zi=zi+1
@@ -58,8 +63,6 @@ Rob_4 = Robot(150,10,-150)
 Rob_5 = Robot(-250,10,350)
 Rob_6 = Robot(-150,10,250)
 Rob_7 = Robot(350,10,-50)
-
-
 
 qrs(50)
 qrs(150)
